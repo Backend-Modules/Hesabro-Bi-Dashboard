@@ -2,18 +2,15 @@
 
 namespace sadi01\bidashboard\widgets\views;
 
+use sadi01\bidashboard\assets\WidgetAssets;
 use sadi01\bidashboard\BiAssets;
 use Yii;
 use yii\bootstrap4\Modal;
+use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\View;
-use yii\widgets\Pjax;
-use yii\helpers\Html;
-use yii\bootstrap4\ActiveForm;
-use yii\helpers\ArrayHelper;
 
-$biAssets = BiAssets::register($this);
-$url = $biAssets->baseUrl;
+WidgetAssets::register($this);
 
 /**
  * @var $searchModel object
